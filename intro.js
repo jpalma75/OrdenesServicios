@@ -1,3 +1,3 @@
 var nombre = "Jesus Palma";
 
-console.log("hola " +  nombre);
+console.log("hola, " +  nombre);
