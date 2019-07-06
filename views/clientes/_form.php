@@ -32,17 +32,17 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'cp')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'creado_por')->textInput(['maxlength' => true]) ?>
+	//    <?= $form->field($model, 'creado_por')->textInput(['maxlength' => true]) ?> 
 
-    <?= $form->field($model, 'fecha_creacion')->textInput() ?>
+ 	//   <?= $form->field($model, 'fecha_creacion')->textInput() ?>
 
-    <?= $form->field($model, 'modificado_por')->textInput(['maxlength' => true]) ?>
+    //	<?= $form->field($model, 'modificado_por')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'fecha_modificacion')->textInput() ?>
+    // <?= $form->field($model, 'fecha_modificacion')->textInput() ?>
 
-    <?= $form->field($model, 'eliminado_por')->textInput(['maxlength' => true]) ?>
+    // <?= $form->field($model, 'eliminado_por')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'fecha_eliminacion')->textInput() ?>
+    // <?= $form->field($model, 'fecha_eliminacion')->textInput() ?>
 
     <?= $form->field($model, 'rfc')->textInput(['maxlength' => true]) ?>
 

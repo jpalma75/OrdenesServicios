@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\helpers\ArrayHelper;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Herramientas */
@@ -24,17 +25,19 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'unm_num')->textInput() ?>
 
-    <?= $form->field($model, 'creado_por')->textInput(['maxlength' => true]) ?>
+    
 
-    <?= $form->field($model, 'fecha_creacion')->textInput() ?>
+   	// <?= $form->field($model, 'creado_por')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'modificado_por')->textInput(['maxlength' => true]) ?>
+	// <?= $form->field($model, 'fecha_creacion')->textInput() ?>
 
-    <?= $form->field($model, 'fecha_modificacion')->textInput() ?>
+    // <?= $form->field($model, 'modificado_por')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'eliminado_por')->textInput(['maxlength' => true]) ?>
+    // <?= $form->field($model, 'fecha_modificacion')->textInput() ?>
 
-    <?= $form->field($model, 'fecha_eliminacion')->textInput() ?>
+    // <?= $form->field($model, 'eliminado_por')->textInput(['maxlength' => true]) ?>
+
+    // <?= $form->field($model, 'fecha_eliminacion')->textInput() ?>
 
     <?= $form->field($model, 'precio')->textInput(['maxlength' => true]) ?>
 
