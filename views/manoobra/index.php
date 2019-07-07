@@ -4,18 +4,18 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
 /* @var $this yii\web\View */
-/* @var $searchModel app\models\ManoObraSearch */
+/* @var $searchModel app\models\ManoobraSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Mano Obras';
+$this->title = 'Mano de Obras';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="mano-obra-index">
+<div class="manoobra-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Mano Obra', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Agregar Mano de Obra', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php Pjax::begin(); ?>
@@ -27,14 +27,14 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'mno_num',
+            //'mno_num',
             'clave',
             'nombre',
             'descripcion',
             'especialidad',
             //'caracteristica',
-            //'nombre_especialista',
-            //'unm_num',
+            'nombre_especialista',
+            'unm_num',
             //'creado_por',
             //'fecha_creacion',
             //'modificado_por',

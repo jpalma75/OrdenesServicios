@@ -4,11 +4,11 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\ManoobraSearch */
+/* @var $model app\models\UnidadesmedidasSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="manoobra-search">
+<div class="unidadesmedidas-search">
 
     <?php $form = ActiveForm::begin([
         'action' => ['index'],
@@ -18,25 +18,15 @@ use yii\widgets\ActiveForm;
         ],
     ]); ?>
 
-    //<?= $form->field($model, 'mno_num') ?>
+    <?= $form->field($model, 'unm_num') ?>
 
     <?= $form->field($model, 'clave') ?>
 
     <?= $form->field($model, 'nombre') ?>
 
-    <?= $form->field($model, 'descripcion') ?>
+    <?= $form->field($model, 'creado_por') ?>
 
-    <?= $form->field($model, 'especialidad') ?>
-
-    <?php // echo $form->field($model, 'caracteristica') ?>
-
-    <?php // echo $form->field($model, 'nombre_especialista') ?>
-
-    <?php // echo $form->field($model, 'unm_num') ?>
-
-    <?php // echo $form->field($model, 'creado_por') ?>
-
-    <?php // echo $form->field($model, 'fecha_creacion') ?>
+    <?= $form->field($model, 'fecha_creacion') ?>
 
     <?php // echo $form->field($model, 'modificado_por') ?>
 
@@ -45,8 +35,6 @@ use yii\widgets\ActiveForm;
     <?php // echo $form->field($model, 'eliminado_por') ?>
 
     <?php // echo $form->field($model, 'fecha_eliminacion') ?>
-
-    <?php // echo $form->field($model, 'precio') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Buscar', ['class' => 'btn btn-primary']) ?>

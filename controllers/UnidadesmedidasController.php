@@ -3,16 +3,16 @@
 namespace app\controllers;
 
 use Yii;
-use app\models\UNM;
-use app\models\UNMSearch;
+use app\models\Unidadesmedidas;
+use app\models\UnidadesmedidasSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * UNMController implements the CRUD actions for UNM model.
+ * UnidadesmedidasController implements the CRUD actions for Unidadesmedidas model.
  */
-class UNMController extends Controller
+class UnidadesmedidasController extends Controller
 {
     /**
      * {@inheritdoc}
@@ -30,12 +30,12 @@ class UNMController extends Controller
     }
 
     /**
-     * Lists all UNM models.
+     * Lists all Unidadesmedidas models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new UNMSearch();
+        $searchModel = new UnidadesmedidasSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -45,7 +45,7 @@ class UNMController extends Controller
     }
 
     /**
-     * Displays a single UNM model.
+     * Displays a single Unidadesmedidas model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -58,13 +58,13 @@ class UNMController extends Controller
     }
 
     /**
-     * Creates a new UNM model.
+     * Creates a new Unidadesmedidas model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new UNM();
+        $model = new Unidadesmedidas();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->unm_num]);
@@ -76,7 +76,7 @@ class UNMController extends Controller
     }
 
     /**
-     * Updates an existing UNM model.
+     * Updates an existing Unidadesmedidas model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -96,7 +96,7 @@ class UNMController extends Controller
     }
 
     /**
-     * Deletes an existing UNM model.
+     * Deletes an existing Unidadesmedidas model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -110,15 +110,15 @@ class UNMController extends Controller
     }
 
     /**
-     * Finds the UNM model based on its primary key value.
+     * Finds the Unidadesmedidas model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return UNM the loaded model
+     * @return Unidadesmedidas the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = UNM::findOne($id)) !== null) {
+        if (($model = Unidadesmedidas::findOne($id)) !== null) {
             return $model;
         }
 

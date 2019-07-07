@@ -3,13 +3,13 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\Manoobra */
+/* @var $model app\models\Unidadesmedidas */
 
-$this->title = 'Agregar Mano de Obra';
-$this->params['breadcrumbs'][] = ['label' => 'Mano de Obras', 'url' => ['index']];
+$this->title = 'Nueva Unidad de Medidas';
+$this->params['breadcrumbs'][] = ['label' => 'Unidadesmedidas', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="manoobra-create">
+<div class="unidadesmedidas-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

@@ -4,12 +4,12 @@ namespace app\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\UNM;
+use app\models\Unidadesmedidas;
 
 /**
- * UNMSearch represents the model behind the search form of `app\models\UNM`.
+ * UnidadesmedidasSearch represents the model behind the search form of `app\models\Unidadesmedidas`.
  */
-class UNMSearch extends UNM
+class UnidadesmedidasSearch extends Unidadesmedidas
 {
     /**
      * {@inheritdoc}
@@ -40,7 +40,7 @@ class UNMSearch extends UNM
      */
     public function search($params)
     {
-        $query = UNM::find();
+        $query = Unidadesmedidas::find();
 
         // add conditions that should always apply here
 

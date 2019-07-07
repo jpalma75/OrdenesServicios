@@ -27,7 +27,7 @@ use Yii;
  * @property UnidadesMedidas $unmNum
  * @property PuManoObra[] $puManoObras
  */
-class ManoObra extends \yii\db\ActiveRecord
+class Manoobra extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
@@ -68,7 +68,7 @@ class ManoObra extends \yii\db\ActiveRecord
             'especialidad' => 'Especialidad',
             'caracteristica' => 'Caracteristica',
             'nombre_especialista' => 'Nombre Especialista',
-            'unm_num' => 'Num Unm ',
+            'unm_num' => 'Unm Num',
             'creado_por' => 'Creado Por',
             'fecha_creacion' => 'Fecha Creacion',
             'modificado_por' => 'Modificado Por',

@@ -4,18 +4,18 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
 /* @var $this yii\web\View */
-/* @var $searchModel app\models\SucursalesSearch */
+/* @var $searchModel app\models\UnidadesmedidasSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Sucursales';
+$this->title = 'Unidades de Medidas';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="sucursales-index">
+<div class="unidadesmedidas-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Agregar Nueva Sucursales', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Nueva Unidad de Medidas', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php Pjax::begin(); ?>
@@ -27,21 +27,15 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            //'suc_num',
+            //'unm_num',
             'clave',
-            'razon_social',
             'nombre',
-            'telefono',
-            'rfc',            
-            //'email:email',
-            //'cp',
-            //'direccion',
             //'creado_por',
             //'fecha_creacion',
             //'modificado_por',
             //'fecha_modificacion',
             //'eliminado_por',
-            //'fecha_eliminacion',            
+            //'fecha_eliminacion',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

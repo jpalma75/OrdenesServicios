@@ -23,7 +23,7 @@ use Yii;
  * @property Materiales[] $materiales
  * @property PreciosUnitarios[] $preciosUnitarios
  */
-class UnidadesMedidas extends \yii\db\ActiveRecord
+class Unidadesmedidas extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}

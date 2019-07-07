@@ -5,7 +5,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Sucursales */
 
-$this->title = 'Create Sucursales';
+$this->title = 'Agregar Sucursales';
 $this->params['breadcrumbs'][] = ['label' => 'Sucursales', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

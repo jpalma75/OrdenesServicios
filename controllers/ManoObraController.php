@@ -3,16 +3,16 @@
 namespace app\controllers;
 
 use Yii;
-use app\models\ManoObra;
-use app\models\ManoObraSearch;
+use app\models\Manoobra;
+use app\models\ManoobraSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * ManoObraController implements the CRUD actions for ManoObra model.
+ * ManoobraController implements the CRUD actions for Manoobra model.
  */
-class ManoObraController extends Controller
+class ManoobraController extends Controller
 {
     /**
      * {@inheritdoc}
@@ -30,12 +30,12 @@ class ManoObraController extends Controller
     }
 
     /**
-     * Lists all ManoObra models.
+     * Lists all Manoobra models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new ManoObraSearch();
+        $searchModel = new ManoobraSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -45,7 +45,7 @@ class ManoObraController extends Controller
     }
 
     /**
-     * Displays a single ManoObra model.
+     * Displays a single Manoobra model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -58,13 +58,13 @@ class ManoObraController extends Controller
     }
 
     /**
-     * Creates a new ManoObra model.
+     * Creates a new Manoobra model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new ManoObra();
+        $model = new Manoobra();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->mno_num]);
@@ -76,7 +76,7 @@ class ManoObraController extends Controller
     }
 
     /**
-     * Updates an existing ManoObra model.
+     * Updates an existing Manoobra model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -96,7 +96,7 @@ class ManoObraController extends Controller
     }
 
     /**
-     * Deletes an existing ManoObra model.
+     * Deletes an existing Manoobra model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -110,15 +110,15 @@ class ManoObraController extends Controller
     }
 
     /**
-     * Finds the ManoObra model based on its primary key value.
+     * Finds the Manoobra model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return ManoObra the loaded model
+     * @return Manoobra the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = ManoObra::findOne($id)) !== null) {
+        if (($model = Manoobra::findOne($id)) !== null) {
             return $model;
         }
 

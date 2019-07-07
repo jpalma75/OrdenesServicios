@@ -4,12 +4,12 @@ namespace app\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\ManoObra;
+use app\models\Manoobra;
 
 /**
- * ManoObraSearch represents the model behind the search form of `app\models\ManoObra`.
+ * ManoobraSearch represents the model behind the search form of `app\models\Manoobra`.
  */
-class ManoObraSearch extends ManoObra
+class ManoobraSearch extends Manoobra
 {
     /**
      * {@inheritdoc}
@@ -41,7 +41,7 @@ class ManoObraSearch extends ManoObra
      */
     public function search($params)
     {
-        $query = ManoObra::find();
+        $query = Manoobra::find();
 
         // add conditions that should always apply here
 

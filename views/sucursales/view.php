@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\Sucursales */
 
-$this->title = $model->suc_num;
+$this->title = $model->clave;
 $this->params['breadcrumbs'][] = ['label' => 'Sucursales', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
@@ -16,11 +16,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Update', ['update', 'id' => $model->suc_num], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->suc_num], [
+        <?= Html::a('Editar', ['update', 'id' => $model->suc_num], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Borrar', ['delete', 'id' => $model->suc_num], [
             'class' => 'btn btn-danger',
             'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
+                'confirm' => 'Estas seguro de borrar el registro de Sucursal?',
                 'method' => 'post',
             ],
         ]) ?>
@@ -29,20 +29,14 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'suc_num',
-            'nombre',
+            //'suc_num',
             'clave',
+            'nombre',
+            'razon_social',            
             'telefono',
             'rfc',
             'cp',
-            'direccion',
-            'creado_por',
-            'fecha_creacion',
-            'modificado_por',
-            'fecha_modificacion',
-            'eliminado_por',
-            'fecha_eliminacion',
-            'razon_social',
+            'direccion',            
             'email:email',
         ],
     ]) ?>
