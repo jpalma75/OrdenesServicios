@@ -74,14 +74,14 @@ class Clientes extends \yii\db\ActiveRecord
             'colonia' => 'Colonia',
             'municipio' => 'Municipio',
             'estado' => 'Estado',
-            'cp' => 'Cp',
+            'cp' => 'C.P.',
             'creado_por' => 'Creado Por',
             'fecha_creacion' => 'Fecha Creacion',
             'modificado_por' => 'Modificado Por',
             'fecha_modificacion' => 'Fecha Modificacion',
             'eliminado_por' => 'Eliminado Por',
             'fecha_eliminacion' => 'Fecha Eliminacion',
-            'rfc' => 'Rfc',
+            'rfc' => 'R. F. C.',
             'consecutivo' => 'Consecutivo',
         ];
     }

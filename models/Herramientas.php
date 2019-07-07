@@ -67,7 +67,7 @@ class Herramientas extends \yii\db\ActiveRecord
             'marca' => 'Marca',
             'modelo' => 'Modelo',
             'caracteristica' => 'Caracteristica',
-            'unm_num' => 'Unm Num',
+            'unm_num' => 'Num Unm ',
             'creado_por' => 'Creado Por',
             'fecha_creacion' => 'Fecha Creacion',
             'modificado_por' => 'Modificado Por',

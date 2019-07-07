@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Maquinarias', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Agregar Maquinaria', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php Pjax::begin(); ?>
@@ -27,13 +27,13 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'maq_num',
+            //'maq_num',
             'clave',
             'nombre',
             'marca',
             'modelo',
             //'caracteristica',
-            //'unm_num',
+            'unm_num',
             //'creado_por',
             //'fecha_creacion',
             //'modificado_por',

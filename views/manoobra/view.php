@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\ManoObra */
 
-$this->title = $model->mno_num;
+$this->title = $model->clave;
 $this->params['breadcrumbs'][] = ['label' => 'Mano Obras', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
@@ -20,7 +20,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('Delete', ['delete', 'id' => $model->mno_num], [
             'class' => 'btn btn-danger',
             'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
+                'confirm' => '¿Estas Seguro de querer borrar el registro de la Mano de Obra?',
                 'method' => 'post',
             ],
         ]) ?>
@@ -29,7 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'mno_num',
+            //'mno_num',
             'clave',
             'nombre',
             'descripcion',
@@ -37,13 +37,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'caracteristica',
             'nombre_especialista',
             'unm_num',
-            'creado_por',
-            'fecha_creacion',
-            'modificado_por',
-            'fecha_modificacion',
-            'eliminado_por',
-            'fecha_eliminacion',
             'precio',
+            //'creado_por',
+            //'fecha_creacion',
+            //'modificado_por',
+            //'fecha_modificacion',
+            //'eliminado_por',
+            //'fecha_eliminacion',            
         ],
     ]) ?>
 

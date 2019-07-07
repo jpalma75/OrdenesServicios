@@ -15,7 +15,7 @@ use yii\widgets\ActiveForm;
         'method' => 'get',
     ]); ?>
 
-    <?= $form->field($model, 'cln_num') ?>
+    <?php // echo $form->field($model, 'cln_num') ?>
 
     <?= $form->field($model, 'razon_social') ?>
 
@@ -24,6 +24,8 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'contacto') ?>
 
     <?= $form->field($model, 'email') ?>
+
+    <?php $form->field($model, 'rfc') ?>
 
     <?php // echo $form->field($model, 'calle') ?>
 
@@ -49,13 +51,11 @@ use yii\widgets\ActiveForm;
 
     <?php // echo $form->field($model, 'fecha_eliminacion') ?>
 
-    <?php // echo $form->field($model, 'rfc') ?>
-
     <?php // echo $form->field($model, 'consecutivo') ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
-        <?= Html::resetButton('Reset', ['class' => 'btn btn-outline-secondary']) ?>
+        <?= Html::submitButton('Buscar', ['class' => 'btn btn-primary']) ?>
+        <?= Html::resetButton('Reiniciar', ['class' => 'btn btn-outline-secondary']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

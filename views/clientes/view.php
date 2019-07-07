@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\Clientes */
 
-$this->title = $model->cln_num;
+$this->title = $model->razon_social;
 $this->params['breadcrumbs'][] = ['label' => 'Clientes', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
@@ -16,11 +16,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Update', ['update', 'id' => $model->cln_num], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->cln_num], [
+        <?= Html::a('Actualizar', ['update', 'id' => $model->cln_num], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Borrar', ['delete', 'id' => $model->cln_num], [
             'class' => 'btn btn-danger',
             'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
+                'confirm' => '¿Estas seguro de borrar el registro del Cliente?',
                 'method' => 'post',
             ],
         ]) ?>
@@ -29,7 +29,6 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'cln_num',
             'razon_social',
             'nombre_corto',
             'contacto',
@@ -40,14 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'municipio',
             'estado',
             'cp',
-            'creado_por',
-            'fecha_creacion',
-            'modificado_por',
-            'fecha_modificacion',
-            'eliminado_por',
-            'fecha_eliminacion',
             'rfc',
-            'consecutivo',
         ],
     ]) ?>
 

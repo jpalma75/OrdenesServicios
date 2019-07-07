@@ -5,7 +5,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Maquinarias */
 
-$this->title = 'Create Maquinarias';
+$this->title = 'Agregar Maquinaria';
 $this->params['breadcrumbs'][] = ['label' => 'Maquinarias', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

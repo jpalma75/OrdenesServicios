@@ -69,7 +69,7 @@ class Materiales extends \yii\db\ActiveRecord
             'modelo' => 'Modelo',
             'caracteristica' => 'Caracteristica',
             'proveedor' => 'Proveedor',
-            'unm_num' => 'Unm Num',
+            'unm_num' => 'Num Unm',
             'creado_por' => 'Creado Por',
             'fecha_creacion' => 'Fecha Creacion',
             'modificado_por' => 'Modificado Por',

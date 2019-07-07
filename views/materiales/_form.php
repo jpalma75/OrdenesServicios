@@ -26,22 +26,10 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'unm_num')->textInput() ?>
 
-    // <?= $form->field($model, 'creado_por')->textInput(['maxlength' => true]) ?>
-
-    // <?= $form->field($model, 'fecha_creacion')->textInput() ?>
-
-    // <?= $form->field($model, 'modificado_por')->textInput(['maxlength' => true]) ?>
-
-    // <?= $form->field($model, 'fecha_modificacion')->textInput() ?>
-
-    // <?= $form->field($model, 'eliminado_por')->textInput(['maxlength' => true]) ?>
-
-    // <?= $form->field($model, 'fecha_eliminacion')->textInput() ?>
-
     <?= $form->field($model, 'precio')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Guardar', ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

@@ -5,7 +5,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Herramientas */
 
-$this->title = 'Create Herramientas';
+$this->title = 'Agregar nueva Herramienta';
 $this->params['breadcrumbs'][] = ['label' => 'Herramientas', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
