@@ -6,6 +6,11 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\Herramientas */
 
+// echo "<pre>";
+// // var_dump($uno);
+// var_dump($model);
+// echo "</pre>";
+
 $this->title = $model->clave;
 $this->params['breadcrumbs'][] = ['label' => 'Herramientas', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
@@ -13,9 +18,18 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="herramientas-view">
 
+    <?php //foreach ($variable as $key => $value): ?>
+        <!-- <table>
+            <tr>
+                <td> $value->nombre </td>
+            </tr>
+        </table> -->
+    <?php //endforeach ?>
+
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>
+    <h2 class="alert alert-primary">Registro: <?= $model->clave ?></h2>
+    <p>        
         <?= Html::a('Actualizar', ['update', 'id' => $model->hrr_num], ['class' => 'btn btn-primary']) ?>
         <?= Html::a('Borrar', ['delete', 'id' => $model->hrr_num], [
             'class' => 'btn btn-danger',
@@ -34,7 +48,9 @@ $this->params['breadcrumbs'][] = $this->title;
             'marca',
             'modelo',
             'caracteristica',
-            'unm_num',
+            // 'unm_num',
+            // 'unmNum.nombre',
+            'unidadesmedidas_nombre',
             'precio',
         ],
     ]) ?>

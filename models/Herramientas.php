@@ -61,20 +61,21 @@ class Herramientas extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'hrr_num' => 'Hrr Num',
-            'clave' => 'Clave',
-            'nombre' => 'Nombre',
-            'marca' => 'Marca',
-            'modelo' => 'Modelo',
-            'caracteristica' => 'Caracteristica',
-            'unm_num' => 'Num Unm ',
-            'creado_por' => 'Creado Por',
-            'fecha_creacion' => 'Fecha Creacion',
-            'modificado_por' => 'Modificado Por',
-            'fecha_modificacion' => 'Fecha Modificacion',
-            'eliminado_por' => 'Eliminado Por',
-            'fecha_eliminacion' => 'Fecha Eliminacion',
-            'precio' => 'Precio',
+            'hrr_num'               => 'Hrr Num',
+            'clave'                 => 'Clave',
+            'nombre'                => 'Nombre',
+            'marca'                 => 'Marca',
+            'modelo'                => 'Modelo',
+            'caracteristica'        => 'Caracteristica',
+            'unm_num'               => 'Unidad de Medida',
+            'creado_por'            => 'Creado Por',
+            'fecha_creacion'        => 'Fecha Creacion',
+            'modificado_por'        => 'Modificado Por',
+            'fecha_modificacion'    => 'Fecha Modificacion',
+            'eliminado_por'         => 'Eliminado Por',
+            'fecha_eliminacion'     => 'Fecha Eliminacion',
+            'precio'                => 'Precio',
+            'unidadesmedidas_nombre'=> 'Unidad de Medida',
         ];
     }
 
@@ -84,6 +85,11 @@ class Herramientas extends \yii\db\ActiveRecord
     public function getUnmNum()
     {
         return $this->hasOne(UnidadesMedidas::className(), ['unm_num' => 'unm_num']);
+    }
+
+    public function getUnidadesmedidas_nombre()
+    {
+        return $this->unmNum->nombre.' '.$this->unmNum->clave;
     }
 
     /**
