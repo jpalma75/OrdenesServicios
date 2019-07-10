@@ -24,10 +24,11 @@ use app\models\Unidadesmedidas
 
     <?= $form->field($model, 'caracteristica')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'unm_num')->textInput() ?>
-
     <?= $form->field($model, 'unm_num')->dropDownList( 
-        ArrayHelper::map(Unidadesmedidas::find()->asArray()->all(), 'unm_num', 'clave'&'nombre') ) ?> 
+        ArrayHelper::map(Unidadesmedidas::find()->asArray()->all(), 'unm_num',
+            function($model) {
+                return $model['clave'].' - '.$model['nombre'];
+            })) ?> 
     
     <?= $form->field($model, 'precio')->textInput(['maxlength' => true]) ?>
 

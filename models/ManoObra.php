@@ -68,7 +68,7 @@ class Manoobra extends \yii\db\ActiveRecord
             'especialidad' => 'Especialidad',
             'caracteristica' => 'Caracteristica',
             'nombre_especialista' => 'Nombre Especialista',
-            'unm_num' => 'Unm Num',
+            'unm_num' => 'UNM',
             'creado_por' => 'Creado Por',
             'fecha_creacion' => 'Fecha Creacion',
             'modificado_por' => 'Modificado Por',
