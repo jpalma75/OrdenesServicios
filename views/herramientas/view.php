@@ -30,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <h2 class="alert alert-primary">Registro: <?= $model->clave ?></h2>
     <p>        
-        <?= Html::a('Actualizar', ['update', 'id' => $model->hrr_num], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Modificar', ['update', 'id' => $model->hrr_num], ['class' => 'btn btn-primary']) ?>
         <?= Html::a('Borrar', ['delete', 'id' => $model->hrr_num], [
             'class' => 'btn btn-danger',
             'data' => [

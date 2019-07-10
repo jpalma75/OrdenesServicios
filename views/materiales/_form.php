@@ -2,8 +2,6 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use yii\helpers\ArrayHelper;
-use app\models\Unidadesmedidas
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Materiales */
@@ -26,11 +24,7 @@ use app\models\Unidadesmedidas
 
     <?= $form->field($model, 'proveedor')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'unm_num')->dropDownList( 
-        ArrayHelper::map(Unidadesmedidas::find()->asArray()->all(), 'unm_num',
-            function($model) {
-                return $model['clave'].' - '.$model['nombre'];
-            })) ?> 
+    <?= $form->field($model, 'unm_num')->textInput() ?>
 
     <?= $form->field($model, 'precio')->textInput(['maxlength' => true]) ?>
 

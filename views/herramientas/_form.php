@@ -36,7 +36,7 @@ echo "</pre>";
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'clave')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'clave')->textInput(['maxlength' => true,'disabled'=>'disabled']) ?>
 
     <?= $form->field($model, 'nombre')->textInput(['maxlength' => true]) ?>
 

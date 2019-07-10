@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\Manoobra */
 
-$this->title = $model->mno_num;
+$this->title = $model->clave;
 $this->params['breadcrumbs'][] = ['label' => 'Mano de Obras', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
@@ -16,11 +16,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Update', ['update', 'id' => $model->mno_num], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->mno_num], [
+        <?= Html::a('Modificar', ['update', 'id' => $model->mno_num], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Borrar', ['delete', 'id' => $model->mno_num], [
             'class' => 'btn btn-danger',
             'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
+                'confirm' => '¿Estas Seguro de querer borrar el registro de la Mano de Obra?',
                 'method' => 'post',
             ],
         ]) ?>
