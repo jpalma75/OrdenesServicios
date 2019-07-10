@@ -1,0 +1,1911 @@
+2019-07-01 06:54:03 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2basic' in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Connection.php:695
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Connection.php(695): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Connection.php(621): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Connection.php(1012): yii\db\Connection->open()
+#3 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Connection.php(999): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Command.php(1153): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Command.php(442): yii\db\Command->queryInternal('fetchAll', 7)
+#7 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\mysql\Schema.php(114): yii\db\Command->queryColumn()
+#8 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Schema.php(237): yii\db\mysql\Schema->findTableNames('')
+#9 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\generators\model\Generator.php(171): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\components\ActiveField.php(46): call_user_func(Object(Closure))
+#12 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\BaseObject->__construct(Array)
+#14 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#15 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\gii\\compone...', Array, Array)
+#16 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\gii\\compone...', Array, Array)
+#17 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\widgets\ActiveForm.php(334): yii\BaseYii::createObject(Array)
+#18 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\generators\model\form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#19 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#20 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', '[<span class="s...')
+#21 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\views\default\view.php(43): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array)
+#22 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#23 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', '[<span class="s...')
+#24 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\controllers\DefaultController))
+#25 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#26 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(72): yii\base\Controller->render('view', Array)
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#28 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#29 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#30 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#31 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#32 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#34 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2basic' in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Connection.php:632
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Connection.php(1012): yii\db\Connection->open()
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Connection.php(999): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Command.php(1153): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Command.php(442): yii\db\Command->queryInternal('fetchAll', 7)
+#5 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\mysql\Schema.php(114): yii\db\Command->queryColumn()
+#6 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Schema.php(237): yii\db\mysql\Schema->findTableNames('')
+#7 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\generators\model\Generator.php(171): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\components\ActiveField.php(46): call_user_func(Object(Closure))
+#10 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\BaseObject->__construct(Array)
+#12 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#13 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\gii\\compone...', Array, Array)
+#14 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\gii\\compone...', Array, Array)
+#15 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\widgets\ActiveForm.php(334): yii\BaseYii::createObject(Array)
+#16 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\generators\model\form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#17 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#18 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', '[<span class="s...')
+#19 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\views\default\view.php(43): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array)
+#20 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#21 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', '[<span class="s...')
+#22 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\controllers\DefaultController))
+#23 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#24 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(72): yii\base\Controller->render('view', Array)
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#26 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#27 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#28 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#29 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#30 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2019-07-01 06:54:02 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '50568'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=gii'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1561956842.7178
+    'REQUEST_TIME' => 1561956842
+]
+2019-07-01 07:01:42 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "Clientes". in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('Clientes', Array)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-07-01 07:01:41 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'Clientes'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '50711'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Clientes'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Clientes'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1561957301.9057
+    'REQUEST_TIME' => 1561957301
+]
+2019-07-01 07:01:49 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\xampp\htdocs\siscos\views\clientes\index.php in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php:233
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\ClientesController))
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\ClientesController))
+#2 C:\xampp\htdocs\siscos\controllers\ClientesController.php(43): yii\base\Controller->render('index', Array)
+#3 [internal function]: app\controllers\ClientesController->actionIndex()
+#4 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#7 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('clientes', Array)
+#8 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2019-07-01 07:01:48 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'clientes'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '50718'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=clientes'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=clientes'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1561957308.8625
+    'REQUEST_TIME' => 1561957308
+]
+2019-07-01 07:08:15 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "Clientes/actionIndex". in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('Clientes/action...', Array)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-07-01 07:08:15 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'Clientes/actionIndex'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '50754'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Clientes/actionIndex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Clientes/actionIndex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1561957695.7338
+    'REQUEST_TIME' => 1561957695
+]
+2019-07-01 07:08:25 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: clientes/actionIndex in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('actionIndex', Array)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('clientes/action...', Array)
+#2 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-07-01 07:08:25 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'clientes/actionIndex'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '50761'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=clientes/actionIndex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=clientes/actionIndex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1561957705.2066
+    'REQUEST_TIME' => 1561957705
+]
+2019-07-02 04:47:59 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Connection.php:695
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Connection.php(695): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Connection.php(621): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Connection.php(1012): yii\db\Connection->open()
+#3 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Connection.php(999): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Command.php(1153): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Command.php(442): yii\db\Command->queryInternal('fetchAll', 7)
+#7 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\mysql\Schema.php(114): yii\db\Command->queryColumn()
+#8 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Schema.php(237): yii\db\mysql\Schema->findTableNames('')
+#9 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\generators\model\Generator.php(171): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\components\ActiveField.php(46): call_user_func(Object(Closure))
+#12 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\BaseObject->__construct(Array)
+#14 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#15 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\gii\\compone...', Array, Array)
+#16 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\gii\\compone...', Array, Array)
+#17 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\widgets\ActiveForm.php(334): yii\BaseYii::createObject(Array)
+#18 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\generators\model\form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#19 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#20 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', '[<span class="s...')
+#21 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\views\default\view.php(43): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array)
+#22 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#23 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', '[<span class="s...')
+#24 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\controllers\DefaultController))
+#25 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#26 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(72): yii\base\Controller->render('view', Array)
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#28 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#29 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#30 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#31 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#32 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#34 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Connection.php:632
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Connection.php(1012): yii\db\Connection->open()
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Connection.php(999): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Command.php(1153): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Command.php(442): yii\db\Command->queryInternal('fetchAll', 7)
+#5 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\mysql\Schema.php(114): yii\db\Command->queryColumn()
+#6 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\db\Schema.php(237): yii\db\mysql\Schema->findTableNames('')
+#7 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\generators\model\Generator.php(171): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\components\ActiveField.php(46): call_user_func(Object(Closure))
+#10 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\BaseObject->__construct(Array)
+#12 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#13 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\gii\\compone...', Array, Array)
+#14 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\gii\\compone...', Array, Array)
+#15 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\widgets\ActiveForm.php(334): yii\BaseYii::createObject(Array)
+#16 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\generators\model\form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#17 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#18 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', '[<span class="s...')
+#19 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\views\default\view.php(43): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array)
+#20 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#21 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', '[<span class="s...')
+#22 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\controllers\DefaultController))
+#23 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#24 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(72): yii\base\Controller->render('view', Array)
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#26 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#27 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#28 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#29 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#30 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2019-07-02 04:47:56 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53972'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=gii'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562035676.7335
+    'REQUEST_TIME' => 1562035676
+]
+2019-07-02 05:59:20 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "UnidadesMedidas/create". in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('UnidadesMedidas...', Array)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-07-02 05:59:20 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'UnidadesMedidas/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55114'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=UnidadesMedidas%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=UnidadesMedidas%2Fcreate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562039960.5779
+    'REQUEST_TIME' => 1562039960
+]
+2019-07-02 06:02:32 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "UnidadesMedidas/create". in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('UnidadesMedidas...', Array)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-07-02 06:02:32 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'UnidadesMedidas/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55166'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=UnidadesMedidas%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=UnidadesMedidas%2Fcreate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562040152.1108
+    'REQUEST_TIME' => 1562040152
+]
+2019-07-02 06:02:51 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "UnidadesMedidas/index". in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('UnidadesMedidas...', Array)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-07-02 06:02:51 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'UnidadesMedidas/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55175'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=UnidadesMedidas%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=UnidadesMedidas%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562040171.0054
+    'REQUEST_TIME' => 1562040171
+]
+2019-07-02 06:03:04 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "UnidadesMedidas/index". in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('UnidadesMedidas...', Array)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-07-02 06:03:04 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'UnidadesMedidas/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55182'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=UnidadesMedidas/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=UnidadesMedidas/index'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562040184.1444
+    'REQUEST_TIME' => 1562040184
+]
+2019-07-02 06:03:15 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "unidadesmedidas/index". in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('unidadesmedidas...', Array)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-07-02 06:03:15 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'unidadesmedidas/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55189'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=unidadesmedidas/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=unidadesmedidas/index'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562040194.9987
+    'REQUEST_TIME' => 1562040194
+]
+2019-07-02 06:03:41 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "unidadesmedidas/index". in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('unidadesmedidas...', Array)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-07-02 06:03:41 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'unidadesmedidas/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55206'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=unidadesmedidas/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=unidadesmedidas/index'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562040221.6235
+    'REQUEST_TIME' => 1562040221
+]
+2019-07-02 06:04:34 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "UnidadesMedidas/index". in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('UnidadesMedidas...', Array)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-07-02 06:04:34 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'UnidadesMedidas/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55212'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=UnidadesMedidas/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=UnidadesMedidas/index'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562040274.0372
+    'REQUEST_TIME' => 1562040274
+]
+2019-07-02 06:07:51 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "UnidadesMedidas/index". in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('UnidadesMedidas...', Array)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-07-02 06:07:50 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'UnidadesMedidas/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55241'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=UnidadesMedidas/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=UnidadesMedidas/index'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562040470.8847
+    'REQUEST_TIME' => 1562040470
+]
+2019-07-02 06:08:03 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "unidadesmedidas/index". in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('unidadesmedidas...', Array)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-07-02 06:08:03 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'unidadesmedidas/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55252'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=unidadesmedidas/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=unidadesmedidas/index'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562040483.4471
+    'REQUEST_TIME' => 1562040483
+]
+2019-07-02 06:12:20 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "unm/index". in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('unm/index', Array)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-07-02 06:12:20 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'unm/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55351'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=unm/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=unm/index'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562040740.0262
+    'REQUEST_TIME' => 1562040740
+]
+2019-07-02 06:12:27 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "UNM/index". in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('UNM/index', Array)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-07-02 06:12:27 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'UNM/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55358'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=UNM/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=UNM/index'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562040747.5665
+    'REQUEST_TIME' => 1562040747
+]
+2019-07-02 06:12:32 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "UNM/index". in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('UNM/index', Array)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-07-02 06:12:31 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'UNM/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55366'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=UNM/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=UNM/index'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562040751.9314
+    'REQUEST_TIME' => 1562040751
+]
+2019-07-02 06:13:19 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "unm/index". in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('unm/index', Array)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-07-02 06:13:19 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'unm/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55402'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=unm/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=unm/index'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562040799.8313
+    'REQUEST_TIME' => 1562040799
+]
+2019-07-02 06:13:46 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "UNM/index". in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('UNM/index', Array)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-07-02 06:13:46 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'UNM/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55418'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=UNM/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=UNM/index'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562040826.4841
+    'REQUEST_TIME' => 1562040826
+]
+2019-07-02 06:16:50 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][Error] Error: Class 'app\models\UnidadesMedidas' not found in C:\xampp\htdocs\siscos\models\Herramientas.php:54
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Model.php(464): app\models\Herramientas->rules()
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Model.php(420): yii\base\Model->createValidators()
+#2 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Model.php(189): yii\base\Model->getValidators()
+#3 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Model.php(795): yii\base\Model->scenarios()
+#4 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\generators\crud\Generator))
+#8 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render('views/_form.php')
+#9 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(61): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#11 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#14 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#15 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2019-07-02 06:16:50 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => '72zRv3uIAOGsqLdOf6szWEXx9RD-4JuW_D2GFytsJjGfKIfOKvtihMvawj0m8XghEbemZ6qi8sKKROsmeRVefw=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\Herramientas'
+        'searchModelClass' => 'app\\models\\HerramientasSearch'
+        'controllerClass' => 'app\\controllers\\HerramientasController'
+        'viewPath' => '@app/views/herramientas'
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '1'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55552'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '600'
+    'HTTP_CONTENT_LENGTH' => '600'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562041010.0872
+    'REQUEST_TIME' => 1562041010
+]
+2019-07-02 06:17:25 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][Error] Error: Class 'app\models\UnidadesMedidas' not found in C:\xampp\htdocs\siscos\models\Herramientas.php:54
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Model.php(464): app\models\Herramientas->rules()
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Model.php(420): yii\base\Model->createValidators()
+#2 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Model.php(189): yii\base\Model->getValidators()
+#3 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Model.php(795): yii\base\Model->scenarios()
+#4 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\generators\crud\Generator))
+#8 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render('views/_form.php')
+#9 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(61): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#11 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#14 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#15 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2019-07-02 06:17:24 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'tuqlpqf2V-hGikVmKIvw4e59-TCfyJZVMHx5w0hWA37GrvPX9oU1jSH4MBVx0buYujuqR8uK_wFGBRTyGi97MA=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\Herramientas'
+        'searchModelClass' => 'app\\models\\HerramientasSearch'
+        'controllerClass' => 'app\\controllers\\HerramientasController'
+        'viewPath' => '@app/views/herramientas'
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '1'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55570'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '600'
+    'HTTP_CONTENT_LENGTH' => '600'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562041044.7317
+    'REQUEST_TIME' => 1562041044
+]
+2019-07-02 06:17:46 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][Error] Error: Class 'app\models\UnidadesMedidas' not found in C:\xampp\htdocs\siscos\models\Herramientas.php:54
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Model.php(464): app\models\Herramientas->rules()
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Model.php(420): yii\base\Model->createValidators()
+#2 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Model.php(189): yii\base\Model->getValidators()
+#3 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Model.php(795): yii\base\Model->scenarios()
+#4 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\generators\crud\Generator))
+#8 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render('views/_form.php')
+#9 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(61): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#11 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#14 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#15 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2019-07-02 06:17:46 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'iZIblGhmkyHrURgTX5QgSj5Q8LwQ2OGrJ-odypqj6U_51k3lORXxRIwjbWAGzmszahajy0SaiP9Rk3D7yNqRAQ=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\Herramientas'
+        'searchModelClass' => 'app\\models\\HerramientasSearch'
+        'controllerClass' => 'app\\controllers\\HerramientasController'
+        'viewPath' => '@app/views/herramientas'
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '1'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55578'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '600'
+    'HTTP_CONTENT_LENGTH' => '600'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562041066.391
+    'REQUEST_TIME' => 1562041066
+]
+2019-07-02 06:24:45 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "unidadesmedidas/index". in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('unidadesmedidas...', Array)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-07-02 06:24:45 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'unidadesmedidas/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55840'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=unidadesmedidas/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=unidadesmedidas/index'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562041485.3491
+    'REQUEST_TIME' => 1562041485
+]
+2019-07-03 04:39:03 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "unidadesmedidas/index". in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('unidadesmedidas...', Array)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-07-03 04:39:03 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'unidadesmedidas/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '59395'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/siscos/index?r=unidadesmedidas/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PATH_INFO' => '/siscos/index'
+    'PHP_SELF' => '/index.php/siscos/index'
+    'QUERY_STRING' => 'r=unidadesmedidas/index'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562121543.2573
+    'REQUEST_TIME' => 1562121543
+]
+2019-07-03 05:01:25 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "unidadesmedidas/index". in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('unidadesmedidas...', Array)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-07-03 05:01:25 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'unidadesmedidas/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '59886'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/siscos/index?r=unidadesmedidas/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PATH_INFO' => '/siscos/index'
+    'PHP_SELF' => '/index.php/siscos/index'
+    'QUERY_STRING' => 'r=unidadesmedidas/index'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562122885.0262
+    'REQUEST_TIME' => 1562122885
+]
+2019-07-03 05:02:15 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "manoobra/index". in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manoobra/index', Array)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-07-03 05:02:14 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'manoobra/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '59924'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/siscos/index?r=manoobra/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PATH_INFO' => '/siscos/index'
+    'PHP_SELF' => '/index.php/siscos/index'
+    'QUERY_STRING' => 'r=manoobra/index'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562122934.9237
+    'REQUEST_TIME' => 1562122934
+]
+2019-07-03 05:05:54 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "unidadesmedidas/index". in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('unidadesmedidas...', Array)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-07-03 05:05:54 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'unidadesmedidas/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '59996'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=unidadesmedidas/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=unidadesmedidas/index'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562123154.5295
+    'REQUEST_TIME' => 1562123154
+]
+2019-07-03 05:06:02 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "unidades_medidas/index". in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('unidades_medida...', Array)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-07-03 05:06:02 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'unidades_medidas/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '60005'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=unidades_medidas/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=unidades_medidas/index'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562123162.5138
+    'REQUEST_TIME' => 1562123162
+]
+2019-07-03 05:06:12 [::1][-][51cg9hnt4oh6pmabjh09do5dju][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "unidadesmedidas/index". in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('unidadesmedidas...', Array)
+#1 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\siscos\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\siscos\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-07-03 05:06:12 [::1][-][51cg9hnt4oh6pmabjh09do5dju][info][application] $_GET = [
+    'r' => 'unidadesmedidas/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '51cg9hnt4oh6pmabjh09do5dju'
+    '_csrf' => '29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pDVqQsbegrusYZKyTFSwTBiTvym1RyxN\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'bxpunes'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\siscos\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '60014'
+    'SERVER_SOFTWARE' => 'PHP 7.3.6 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=unidadesmedidas/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\siscos\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=unidadesmedidas/index'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-419,es;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=51cg9hnt4oh6pmabjh09do5dju; _csrf=29246db2a10b4ea2dfe0b2b77078016f9043a98cc2647a42f38928b53bad0fc6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pDVqQsbegrusYZKyTFSwTBiTvym1RyxN%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1562123172.4842
+    'REQUEST_TIME' => 1562123172
+]
